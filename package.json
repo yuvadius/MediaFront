@@ -1,0 +1,16 @@
+{
+  "name": "mediafront",
+  "packageManager": "yarn@3.6.4",
+  "scripts": {
+    "start": "serverless offline --httpPort=4000",
+    "deploy:staging": "serverless deploy --aws-profile personal --stage staging",
+    "deploy:production": "serverless deploy --aws-profile personal --stage production"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.101",
+    "serverless": "latest",
+    "serverless-offline": "latest",
+    "serverless-plugin-typescript": "latest",
+    "typescript": "latest"
+  }
+}
